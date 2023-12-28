@@ -15,11 +15,9 @@ INSERT INTO Currency (Country, Name, Abbreviation) VALUES
     ('United States', 'Dollar', 'USD'),
     ('Eurozone', 'Euro', 'EUR'),
     ('Japan', 'Yen', 'JPY'),
-    ('United Kingdom', 'Pound', 'GBP'),
     ('Israel', 'Shekel', 'ILS');
 
 INSERT INTO CurrencyPair (Pair, MinValue, MaxValue) VALUES
     ('USD/EUR', 1.1, 1.2),
     ('USD/JPY', 100, 110),
-    ('EUR/GBP', 0.8, 0.9),
     ('USD/ILS', 3.5, 3.8);

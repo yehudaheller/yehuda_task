@@ -41,3 +41,27 @@ def save_currency_pair_data(pair_data):
     # Commit changes and close database connection
     conn.commit()
     conn.close()
+
+def update_in_db_min_value(pair, new_min_value):
+    # Connect to SQLite database
+    conn = sqlite3.connect("DataLayer/stock_exchange.db")
+    cursor = conn.cursor()
+
+    # Update the minimum value in CurrencyPair table
+    cursor.execute("UPDATE CurrencyPair SET MinValue = ? WHERE Pair = ?", (new_min_value, pair))
+
+    # Commit changes and close database connection
+    conn.commit()
+    conn.close()
+
+def update_in_db_max_value(pair, new_max_value):
+    # Connect to SQLite database
+    conn = sqlite3.connect("DataLayer/stock_exchange.db")
+    cursor = conn.cursor()
+
+    # Update the maximum value in CurrencyPair table
+    cursor.execute("UPDATE CurrencyPair SET MaxValue = ? WHERE Pair = ?", (new_max_value, pair))
+
+    # Commit changes and close database connection
+    conn.commit()
+    conn.close()
