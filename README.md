@@ -1,5 +1,6 @@
 yehuda heller task
 
+![Demo](demo_image.gif)
 
 The Stock Exchange App is a simple application that simulates trades for currency pairs. It consists of three main components: Read_sql_to_db.py for initializing the SQLite database, data_layer.py for interacting with the database, and ui_layer.py for creating a Tkinter-based user interface. Trades are simulated in the business_layer.py script.
 Generates random numbers for each currency, updates in a database, and in the display of the software window the new minimum and maximum if they have changed.
